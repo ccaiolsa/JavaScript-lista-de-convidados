@@ -4,8 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="cadastro,js">
 </head>
 <body>
+    <h1>LISTA DE CONVIDADOS</h1>
+    <div id="lista-personalizada">
+        <table id="lista">
+            <thead>
+                <tr>
+                    <th> Nome do convidado </th>
+                    <th> Número de acompanhantes </th>
+                    <th> Nome dos acompanhantes </th>
+                    <th> Presente dos aniversariantes </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td> convidado 1 </td>
+                    <td class="celula-personalizada"> 2 </td>
+                    <td> acompanhante1</br> acompanhante2 </td>
+                    <td class="celula-personalizada"> Bola </td>
+                    <td class="excluir"><button id="iteracao"><img src="C:\Users\ccaio\Documents\repositorio\Cypress-teste\Sites-teste\SIte-de-cadastro\JavaScript-lista-de-convidados\ícones\delete.svg" alt="excluir"></button></td>
+                </tr>
+                <tr id="cadastrados">
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="input">
+        <div class="primeiro">
+            <input type="text" id="nome-convidado">
+            <button onclick="enviarConvidado()"> Cadastrar </button>
+        </div>
+        <div class="segundo">
+            <input type="number" id="acompanhantes">
+            <button onclick="enviarNumero()"> Cadastrar </button>
+        </div>
+        <div class="terceiro">
+            <input type="text" id="nome-acompanhante">
+            <button onclick="enviarAcompanhante()"> Cadastrar </button>
+        </div>
+        <div class="quarto">
+            <input type="text" id="presente">
+            <button onclick="enviarPresente()"> Cadastrar </button>
+        </div>
+    </div>
     
 </body>
 </html>

@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+:root{
+    --background: linear-gradient(to right, #faa2a2, #9fa6f5);;
+    --primary-color: hsl(352, 95%, 75%);
+    --button-color: hsl(128, 95%, 75%);
+    --font-family: "Poppins", sans-serif;
+    --font-size-big: 32px;
+    --font-light: 300;
+    --font-nomral: 400;
+    --font-bold: 700;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--font-family);
+    background: var(--background);
+
+}
+
+h1{
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 1px var(--primary-color);
+    padding: 2rem;
+}
+
+#lista-personalizada{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(248, 220, 172);
+    width: 80%;
+    min-width: 600px;
+    height: 75vh;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 20px;
+    border: 1px solid rgb(245, 192, 102) ;
+}
+
+td{
+    background-color: white;
+    border-radius: 20px;
+}
+th, tr, td{
+    padding: 1rem 2rem;
+    text-align: left;
+}
+table .celula-personalizada{
+    width: 10%;
+    text-align: center;
+}
+.excluir{
+    width: 5%;
+    height: 5%;
+}
+.excluir #iteracao{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+#input{
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+    margin: 0 auto;
+}
+#input .primeiro{
+    display: flex;
+    margin: 0 auto;  
+}
+input{
+    padding: 12px 24px;
+    border: transparent;
+    border-radius: 12px;
+    margin-right: 5px;
+}
+input:hover{
+    border: #9fa6f5;
+}
+input:focus{
+    outline: none;
+    background-color: rgb(250, 239, 224);
+}
+#input button{
+    padding: 12px 24px;
+    border: none;
+    border-radius: 12px;
+    background-color: var(--button-color);
+    box-shadow: 1px 1px 1px black;
+    cursor: pointer;
+}
+#input button:hover{
+    background-color: hsl(128, 90%, 68%);
+}
+#input button:active{
+    background-color: hsl(128, 92%, 62%);
+    box-shadow: none;
+}
+#input .segundo{
+    display: none;
+    margin: 0 auto;   
+}
+#input .terceiro{
+    display: none;
+    margin: 0 auto;  
+}
+#input .quarto{
+    display: none;
+    margin: 0 auto;  
+}

@@ -1,0 +1,23 @@
+{
+  "name": "javascript-lista-de-convidados",
+  "version": "1.0.0",
+  "description": "MINI PROJETO DE LISTA DE CONVIDADOS\r ///////////////////////////////////////////////\r Utilizo HTML e CSS para a estrutura e estilização\r da página web e JavaScript para o armanzenamento \r dos dados dos convidados.\r ///////////////////////////////////////////////\r A lista tem os seguintes itens:\r - Nome completo do convidado\r - Número de acompanhantes\r - Nome dos acompanhantes\r - Presente do aniversariante\r - Opção de impressão",
+  "main": "cadastro.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ccaiolsa/JavaScript-lista-de-convidados.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ccaiolsa/JavaScript-lista-de-convidados/issues"
+  },
+  "homepage": "https://github.com/ccaiolsa/JavaScript-lista-de-convidados#readme",
+  "dependencies": {
+    "cypress": "^13.6.0"
+  }
+}

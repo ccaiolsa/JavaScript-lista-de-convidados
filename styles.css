@@ -39,6 +39,7 @@ h1{
     height: 75vh;
     align-items: center;
     margin: 0 auto;
+    padding: 1rem;
     border-radius: 20px;
     border: 1px solid rgb(245, 192, 102) ;
 }
@@ -79,6 +80,7 @@ input{
     border: transparent;
     border-radius: 12px;
     margin-right: 5px;
+    overflow: hidden;
 }
 input:hover{
     border: #9fa6f5;

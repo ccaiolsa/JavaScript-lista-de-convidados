@@ -5,21 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="cadastro,js">
 </head>
 <body>
     <h1>LISTA DE CONVIDADOS</h1>
     <div id="lista-personalizada">
         <table id="lista">
-            <thead>
                 <tr>
                     <th> Nome do convidado </th>
                     <th> Número de acompanhantes </th>
                     <th> Nome dos acompanhantes </th>
                     <th> Presente dos aniversariantes </th>
                 </tr>
-            </thead>
-            <tbody>
                 <tr>
                     <td> convidado 1 </td>
                     <td class="celula-personalizada"> 2 </td>
@@ -27,29 +23,26 @@
                     <td class="celula-personalizada"> Bola </td>
                     <td class="excluir"><button id="iteracao"><img src="C:\Users\ccaio\Documents\repositorio\Cypress-teste\Sites-teste\SIte-de-cadastro\JavaScript-lista-de-convidados\ícones\delete.svg" alt="excluir"></button></td>
                 </tr>
-                <tr id="cadastrados">
-                </tr>
-            </tbody>
         </table>
     </div>
     <div id="input">
         <div class="primeiro">
-            <input type="text" id="nome-convidado">
-            <button onclick="enviarConvidado()"> Cadastrar </button>
+            <input type="text" id="nome-convidado" placeholder="Nome do convidado">
+            <button id="btn1"> Cadastrar </button>
         </div>
         <div class="segundo">
-            <input type="number" id="acompanhantes">
-            <button onclick="enviarNumero()"> Cadastrar </button>
+            <input type="number" id="acompanhantes" placeholder="Número de acompanhantes">
+            <button id="btn2" type='submit'> Cadastrar </button>
         </div>
         <div class="terceiro">
-            <input type="text" id="nome-acompanhante">
-            <button onclick="enviarAcompanhante()"> Cadastrar </button>
+            <input type="text" id="nome-acompanhante" placeholder="Nome dos acompanhantes">
+            <button id="btn3" type='submit'> Cadastrar </button>
         </div>
         <div class="quarto">
-            <input type="text" id="presente">
-            <button onclick="enviarPresente()"> Cadastrar </button>
+            <input type="text" id="presente" placeholder="Presente do aniversariante">
+            <button id="btn4" type='submit'> Cadastrar </button>
         </div>
     </div>
-    
+<script src="cadastro.js" defer></script>
 </body>
 </html>

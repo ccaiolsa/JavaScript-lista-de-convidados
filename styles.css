@@ -4,6 +4,8 @@
     --background: linear-gradient(to right, #faa2a2, #9fa6f5);;
     --primary-color: hsl(352, 95%, 75%);
     --button-color: hsl(128, 95%, 75%);
+    --button-hover: hsl(128, 92%, 65%);
+    --button-no-hover:hsl(0, 97%, 65%);
     --font-family: "Poppins", sans-serif;
     --font-size-big: 32px;
     --font-light: 300;
@@ -34,9 +36,9 @@ h1{
     display: flex;
     flex-direction: column;
     background-color: rgb(248, 220, 172);
-    width: 80%;
+    width: auto;
     min-width: 600px;
-    height: 75vh;
+    height: auto;
     align-items: center;
     margin: 0 auto;
     padding: 1rem;
@@ -52,15 +54,12 @@ th, tr, td{
     padding: 1rem 2rem;
     text-align: left;
 }
-table .celula-personalizada{
-    width: 10%;
-    text-align: center;
-}
+
 .excluir{
     width: 5%;
     height: 5%;
 }
-.excluir #iteracao{
+.excluir .iteracao{
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -98,21 +97,27 @@ input:focus{
     cursor: pointer;
 }
 #input button:hover{
-    background-color: hsl(128, 90%, 68%);
+    background-color: var(--button-hover);
 }
 #input button:active{
-    background-color: hsl(128, 92%, 62%);
+    background-color: var(--button-hover);
     box-shadow: none;
 }
-#input .segundo{
+#input .segundo, #input .terceiro, #input .quarto, .loop{
     display: none;
     margin: 0 auto;   
 }
-#input .terceiro{
-    display: none;
-    margin: 0 auto;  
+
+.loop #sim{
+    background-color:var(--button-color);
+    margin-right: 5px;
 }
-#input .quarto{
-    display: none;
-    margin: 0 auto;  
+.loop #nao{
+    background-color:hsl(0, 96%, 68%);
+}
+.loop #nao:hover{
+    background-color: var(--button-no-hover);
+}
+.loop #nao:active{
+    box-shadow: none;
 }

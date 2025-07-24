@@ -4,10 +4,11 @@ document.addEventListener("DOMContentLoaded", function () {
   const terceiraSubmissao = document.querySelector(".terceiro");
   const quartaSubmissao = document.querySelector(".quarto");
   const lista = document.getElementById("lista");
-  const lixeira = document.querySelector(".excluir").innerHTML;
+  const iteracao = document.querySelector(".iteracao");
   const loop = document.querySelector(".loop");
   const sim = document.getElementById("sim");
   const nao = document.getElementById("nao");
+  const excluir = document.querySelector('.excluir');
 
   let convidado = {
     nome: "",
@@ -62,10 +63,19 @@ document.addEventListener("DOMContentLoaded", function () {
       presente.value = "";
 
       quartaSubmissao.style.display = "none";
-      lista.innerHTML += `<td>${convidado.nome}</td><td>${convidado.numeroAcompanhante}</td><td>${convidado.nomeAcompanhante}</td><td>${convidado.presente}</td><td class="excluir">${lixeira}</td>`;
+      
+      lista.innerHTML += 
+      `<tr>
+      <td>${convidado.nome}</td>
+      <td>${convidado.numeroAcompanhante}</td>
+      <td>${convidado.nomeAcompanhante}</td>
+      <td>${convidado.presente}</td>
+      <td class="iteracao">${iteracao.innerHTML}</td>
+      </tr>`;
 
       loop.style.display = "flex";
     });
+
     sim.addEventListener('click', function(){
 
         convidado.nome = "";
@@ -80,4 +90,13 @@ document.addEventListener("DOMContentLoaded", function () {
         loop.style.display = 'none';
         window.print();
     })
+
+  excluir.addEventListener('click', function(e){
+    if(e.target && e.target.classList.contains('excluir')) {
+      const linha = e.target.closest('tr');
+      if (linha){
+        linha.remove();
+      }
+    }
+  })
 });

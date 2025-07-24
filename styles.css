@@ -55,11 +55,11 @@ th, tr, td{
     text-align: left;
 }
 
-.excluir{
+.iteracao{
     width: 5%;
     height: 5%;
 }
-.excluir .iteracao{
+.iteracao .excluir{
     background-color: transparent;
     border: none;
     cursor: pointer;
